@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
 /* web */
 *{
     transition: 0.4s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* header */
@@ -94,6 +96,9 @@
     text-decoration: none !important;
     color: #000;
 }
+.post-image {
+    min-height: 90px;
+}
 
 /* blog post */
 #Blog1 {
@@ -150,9 +155,12 @@
     flex-direction: row-reverse;
     justify-content: space-between;
 }
-.blog-pager a {
+.blog-pager span {
     text-transform: uppercase;
     font-weight: 600;
+}
+.blog-pager .home-link {
+    display: none !important;
 }
 
 /* sidebar */
