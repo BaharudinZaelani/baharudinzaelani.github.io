@@ -36,6 +36,9 @@
 
 
 /* blog content */
+.section {
+    margin-top: 32px;
+}
 .body-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -90,4 +93,77 @@
 .body-content a {
     text-decoration: none !important;
     color: #000;
+}
+
+/* blog post */
+#Blog1 {
+    margin-bottom: 59px;
+}
+.post-title {
+    font-size: 2.4rem !important;
+}
+.date-header {
+    font-size: 0.8rem;
+    color: rgba(73, 73, 73, 0.603);
+}
+.separator a {
+    margin: 0 !important;
+}
+
+.post-body,
+.post-title,
+.date-header
+{
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 27px;
+}
+
+.comments {
+    padding: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+.post-footer-line.post-footer-line-1 {
+    margin: 12px 12px 12px 0;
+}
+.post-footer-line.post-footer-line-1 .post-icons a{
+    display: inline-flex;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+    justify-content: center;
+    padding: 12px;
+    margin: 0 !important;
+}
+.post-feeds {
+    display: none !important;
+}
+.blog-pager{
+    border-radius: 6px;
+    margin: 22px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 27px;
+    
+    /* position */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.blog-pager a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* sidebar */
+.sidebar .card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none !important;
+    border-radius: 7px;
+}
+.sidebar .card-header {
+    background-color: #fff;
+    border: none !important;
+    margin-top: 12px;
 }
