@@ -94,6 +94,9 @@
     text-decoration: none !important;
     color: #000;
 }
+.post-image {
+    min-height: 79px;
+}
 
 /* blog post */
 #Blog1 {
@@ -150,9 +153,12 @@
     flex-direction: row-reverse;
     justify-content: space-between;
 }
-.blog-pager a {
+.blog-pager span {
     text-transform: uppercase;
     font-weight: 600;
+}
+.blog-pager .home-link {
+    display: none !important;
 }
 
 /* sidebar */
