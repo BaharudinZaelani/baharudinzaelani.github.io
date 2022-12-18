@@ -39,7 +39,7 @@
 .section {
     margin-top: 32px;
 }
-.body-content #Blog1{
+.body-content .posts{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 12px;
@@ -143,15 +143,14 @@
     border-radius: 6px;
     margin: 22px 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 27px;
+    padding: 17px;
     
     /* position */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 .blog-pager a {
-    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
 }
