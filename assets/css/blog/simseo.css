@@ -39,7 +39,7 @@
 .section {
     margin-top: 32px;
 }
-.body-content {
+.body-content #Blog1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 12px;

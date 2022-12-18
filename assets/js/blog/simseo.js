@@ -1,3 +1,7 @@
+// message
+console.log("This Template Style like CSS/JS/Fonts (SIMSEO), hosted in my github pages, you can't modif this template if you get this template for FREE ! ");
+console.log("if you want this template customize, you need purchase premium template");
+console.log("@BaharDev : https://bahardev.my.id");
 $(document).ready(()=>{
     // home
     // get image
