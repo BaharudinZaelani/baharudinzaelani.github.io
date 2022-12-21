@@ -174,3 +174,9 @@
     border: none !important;
     margin-top: 12px;
 }
+
+.separator a {
+    display: block;
+    max-height: 490px;
+    overflow: hidden;
+}
