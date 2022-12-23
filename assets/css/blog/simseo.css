@@ -204,10 +204,9 @@ span#blog-pager-newer-link::before {
 ol#top-ra {
     padding: 12px;
     border-radius: 12px;
-    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
 }
 ol#top-ra .comment {
-    background: #f2f2f245;
+    background: #f2f2f2b0;
     padding: 10px 11px;
     border-radius: 12px;
 }
@@ -215,10 +214,15 @@ ol#top-ra .comment {
     border-radius: 40px;
 }
 .comments .comment .comment-actions a {
-    border-radius: 12px;
+    border-radius: 3px;
     padding: 3px 25px;
-    background-color: #b9c7f3;
+    background-color: #ffe4ad;
+    margin-right: 12px;
     box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+}
+.comments .comment-replybox-single iframe {
+    border-radius: 12px;
+    margin-bottom: 22px;
 }
 
 
