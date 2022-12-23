@@ -170,6 +170,8 @@ span.post-labels a {
     border-radius: 7px;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     background-color: white;
+    margin-left: 8px;
+    margin-top: 12px;
 }
 
 span#blog-pager-older-link::after {
@@ -201,6 +203,9 @@ span#blog-pager-newer-link::before {
 
 /* responsive design */
 @media screen and ( max-width: 680px) {
+    span.post-labels a {
+        margin-top: 12px;
+    }
     .wrp-header .b-header {
         display: flex;
         width: 100%;
