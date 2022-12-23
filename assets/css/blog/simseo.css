@@ -198,7 +198,22 @@ span#blog-pager-newer-link::before {
 .widget h2 {
     border-bottom: 4px solid #f3c7b385;
 }
-
+.widget-content.list-label-widget-content ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+}
+.widget-content.list-label-widget-content ul li {
+    padding: 0px 15px;
+    border-radius: 12px;
+    background-color: beige;
+    margin-right: 12px;
+}
+.widget-content.list-label-widget-content ul li a {
+    color: #000;
+    text-decoration: none;
+}
 
 /* comments */
 ol#top-ra {
