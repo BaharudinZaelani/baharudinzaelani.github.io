@@ -164,7 +164,7 @@
     display: none !important;
 }
 
-span.post-labels {
+span.post-labels a {
     display: inline-block;
     padding: 12px;
     border-radius: 7px;
