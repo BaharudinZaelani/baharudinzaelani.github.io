@@ -16,7 +16,7 @@ $(document).ready(()=>{
     separator.each(function(e) {
         // tag img
         $(this).children().children().css("width", "100%");
-        $(this).children().children().addClass("img-thumbnail");
+        $(this).children().children().addClass("img-fluid");
     });
 
 });
