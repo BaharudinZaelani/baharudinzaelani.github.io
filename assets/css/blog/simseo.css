@@ -114,8 +114,10 @@
 }
 .separator a {
     margin: 0 !important;
+    display: block;
+    max-height: 490px;
+    overflow: hidden;
 }
-
 .post-body,
 .post-title,
 .date-header
@@ -193,12 +195,10 @@ span#blog-pager-newer-link::before {
     border: none !important;
     margin-top: 12px;
 }
-
-.separator a {
-    display: block;
-    max-height: 490px;
-    overflow: hidden;
+.widget h2 {
+    border-bottom: 4px solid #f3c7b385;
 }
+
 
 /* comments */
 ol#top-ra {
