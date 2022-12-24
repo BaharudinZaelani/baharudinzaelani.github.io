@@ -200,19 +200,21 @@ span#blog-pager-newer-link::before {
 }
 .widget-content.list-label-widget-content ul {
     list-style: none;
-    display: flex;
+    display: grid;
     padding: 0;
-    flex-direction: row;
 }
 .widget-content.list-label-widget-content ul li {
-    padding: 0px 15px;
-    border-radius: 12px;
-    background-color: beige;
+    padding: 4px 15px;
+    border-radius: 6px;
+    background-color: #e1dcf59e;
     margin-right: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
 }
 .widget-content.list-label-widget-content ul li a {
     color: #000;
     text-decoration: none;
+    display: block;
 }
 
 /* comments */
