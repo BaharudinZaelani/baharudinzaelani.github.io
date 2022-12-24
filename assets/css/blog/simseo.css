@@ -85,12 +85,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-
-    /* image style */
     border-radius: 5px !important;
-
-    /* image pos */
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 0.4;
 }
 .body-content a {
@@ -285,6 +283,18 @@ a.g-profile {
 
 /* responsive design */
 @media screen and ( max-width: 680px) {
+    .body-content .card .image {
+        opacity: 1 !important;
+    }
+    .body-content .card .card-header h4 {
+        padding: 4px 12px !important;
+        background-color: #e5e2f1;
+        border-radius: 6px;
+        font-weight: 700;
+    }
+    .body-content .card:hover > .card-header {
+        opacity: 1;
+    }
     span.post-labels a {
         margin-top: 12px;
     }
