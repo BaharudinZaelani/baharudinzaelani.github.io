@@ -280,6 +280,45 @@ a.g-profile {
     display: none;
 }
 
+/* lightbox */
+.CSS_LIGHTBOX {
+    z-index: 9999 !important;
+}
+.CSS_LIGHTBOX_BTN_CLOSE.CSS_LIGHTBOX_BTN_CLOSE_POS {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: scale(1.5);
+}
+.CSS_LIGHTBOX_SCALED_IMAGE_IMG {
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.goog-inline-block {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 6px;
+}
+.goog-inline-block img {
+    width: 60vw !important;
+    height: auto !important;
+}
+.CSS_LIGHTBOX_BG_MASK {
+    background-color: #00000052 !important;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 /* responsive design */
 @media screen and ( max-width: 680px) {
@@ -319,7 +358,7 @@ a.g-profile {
     }
     .body-content .card .card-header, .body-content .card .card-body {
         position: relative;
-        z-index: 9999;
+        z-index: 999;
         overflow: auto;
         white-space: break-spaces;
     }
