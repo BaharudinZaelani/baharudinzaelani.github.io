@@ -297,7 +297,7 @@ a.g-profile {
     border-radius: 6px;
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
-.goog-inline-block {
+.CSS_LIGHTBOX .goog-inline-block {
     margin: 0 !important;
     display: flex !important;
     flex-direction: row;
@@ -307,7 +307,7 @@ a.g-profile {
     height: 100vh;
     border-radius: 6px;
 }
-.goog-inline-block img {
+.CSS_LIGHTBOX .goog-inline-block img {
     width: 60vw !important;
     height: auto !important;
 }
