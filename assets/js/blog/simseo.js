@@ -17,6 +17,7 @@ $(document).ready(()=>{
         // tag img
         $(this).children().children().css("width", "100%");
         $(this).children().children().addClass("img-fluid");
+        $(this).children().children().addClass("mb-2");
     });
 
 });
