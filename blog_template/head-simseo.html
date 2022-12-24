@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <b:if cond='data:blog.metaDescription'>
+        <meta expr:content='data:blog.metaDescription' name='description' />
+    </b:if>
+
+    <!-- keyword -->
+    <meta name="keywords" content="" />
+
+    <!-- home -->
+    <b:if cond='data:view.isHomepage'>
+        <title>
+            <data:blog.title />
+        </title>
+    </b:if>
+
+    <!-- posts -->
+    <b:if cond='data:view.isSingleItem'>
+        <title>
+            <data:blog.pageName /> -
+            <data:blog.title />
+        </title>
+        <meta expr:content='data:blog.pageName' property='og:title' />
+        <meta expr:content='data:blog.canonicalUrl' property='og:url' />
+        <meta content='article' property='og:type' />
+        <b:if cond='data:blog.postImageUrl'>
+            <meta expr:content='data:blog.postImageUrl' property='og:image' />
+            <b:else />
+            <b:if cond='data:blog.postImageThumbnailUrl'>
+                <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image' />
+            </b:if>
+        </b:if>
+    </b:if>
+
+    <!-- tag 1 -->
+    <meta content='Indonesia' name='geo.placename' />
+    <meta content='TheZaww' name='Author' />
+    <meta content='id' name='geo.country' />
+    <meta content='en_US' property='og:locale' />
+    <meta content='en_GB' property='og:locale:alternate' />
+    <meta content='id_ID' property='og:locale:alternate' />
+    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+        <meta expr:content='data:blog.metaDescription' property='og:description' />
+    </b:if>
+
+    <!-- tag 2 -->
+    <meta expr:content='data:blog.title' property='og:site_name' />
+    <meta expr:content='data:blog.homepageUrl' name='twitter:domain' />
+    <meta expr:content='data:blog.pageName' name='twitter:title' />
+    <b:if cond='data:blog.postImageUrl'>
+        <meta content='summary_large_image' name='twitter:card' />
+        <meta expr:content='data:blog.postImageUrl' name='twitter:image' />
+        <b:else />
+        <meta content='summary' name='twitter:card' />
+        <b:if cond='data:blog.postImageThumbnailUrl'>
+            <meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image' />
+        </b:if>
+    </b:if>
+    <meta expr:content='data:blog.pageName' name='twitter:title' />
+    <b:if cond='data:blog.metaDescription'>
+        <meta expr:content='data:blog.metaDescription' name='twitter:description' />
+    </b:if>
+    <meta expr:content='data:blog.canonicalUrl' name='twitter:url' />
+
+</head>
+
+<body>
+
+</body>
+
+</html>
