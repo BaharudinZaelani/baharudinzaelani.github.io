@@ -281,4 +281,20 @@ ol#top-ra .comment {
         text-transform: uppercase;
         font-weight: 600;
     }
+    span.comment-actions.secondary-text {
+        white-space: nowrap;
+        display: flex;
+        overflow: auto;
+    }
+    .comments .comment .comment-actions a {
+        border-radius: 3px;
+        display: block;
+        padding: 3px 12px;
+        background-color: #dfe0e0;
+        transform: scale(0.8);
+        box-shadow: 0 !important;
+    }
+    ol#top-ra {
+        padding: 0 !important;
+    }
 }
