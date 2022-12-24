@@ -249,7 +249,7 @@ ol#top-ra .comment {
 .comments .comment .comment-actions a {
     border-radius: 3px;
     padding: 3px 25px;
-    background-color: #000;
+    background-color: rgb(246, 255, 227);
     margin-right: 12px;
     
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
