@@ -123,14 +123,20 @@
 .date-header
 {
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px; */
     padding: 27px;
 }
 
 .comments {
     padding: 18px;
     border-radius: 5px;
-    box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+    
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px; */
 }
 .post-footer-line.post-footer-line-1 {
     margin: 12px 12px 12px 0;
@@ -138,7 +144,9 @@
 .post-footer-line.post-footer-line-1 .post-icons a{
     display: inline-flex;
     align-items: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border-radius: 6px;
     justify-content: center;
     padding: 12px;
@@ -150,7 +158,9 @@
 .blog-pager{
     border-radius: 6px;
     margin: 22px 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     padding: 17px;
     
     /* position */
@@ -170,7 +180,9 @@ span.post-labels a {
     display: inline-block;
     padding: 12px;
     border-radius: 7px;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px; */
     background-color: white;
     margin-right: 10px;
     margin-top: 12px;
@@ -186,7 +198,9 @@ span#blog-pager-newer-link::before {
 
 /* sidebar */
 .sidebar .card {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border: none !important;
     border-radius: 7px;
 }
@@ -235,11 +249,34 @@ ol#top-ra .comment {
     padding: 3px 25px;
     background-color: #ffe4ad;
     margin-right: 12px;
-    box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px; */
 }
 .comments .comment-replybox-single iframe {
     border-radius: 12px;
     margin-bottom: 22px;
+}
+.author-profile {
+    padding: 12px;
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    /* box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px; */
+    border-radius: 11px;
+}
+.author-profile img {
+    border: 1px solid #efefef;
+    float: left;
+    margin-right: 5px;
+    border-radius: 12px;
+}
+a.g-profile {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.comments .comments-content .datetime {
+    margin-left: 6px;
+    display: none;
 }
 
 
@@ -274,7 +311,9 @@ ol#top-ra .comment {
         white-space: break-spaces;
     }
     .body-content a.card {
-        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
     }
     .blog-pager span {
         font-size: 0.7rem;
@@ -292,7 +331,9 @@ ol#top-ra .comment {
         padding: 3px 12px;
         background-color: #dfe0e0;
         transform: scale(0.8);
-        box-shadow: 0 !important;
+        
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        /* box-shadow: 0 !important; */
     }
     ol#top-ra {
         padding: 0 !important;
