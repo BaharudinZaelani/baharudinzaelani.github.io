@@ -243,11 +243,13 @@ ol#top-ra .comment {
 }
 .avatar-image-container {
     border-radius: 40px;
+    background-color: black;
+    height: 80px !important;
 }
 .comments .comment .comment-actions a {
     border-radius: 3px;
     padding: 3px 25px;
-    background-color: #ffe4ad;
+    background-color: #000;
     margin-right: 12px;
     
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
