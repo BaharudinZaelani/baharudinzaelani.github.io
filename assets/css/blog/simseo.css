@@ -91,7 +91,7 @@
     background-size: cover;
     opacity: 0.4;
 }
-.post-body.entry-content a {
+.post-body.entry-content a.download {
     display: inline-block;
     padding: 0 24px;
     background-color: #b7a9ff !important;
