@@ -20,6 +20,15 @@ $(document).ready(()=>{
         $(this).children().children().addClass("mb-2");
     });
 
+    // Daftar isi
+    let daftarisi = $(".main h1");
+    daftarisi.each(function(e) {
+      $(this).attr("id", "#daftar" + e);
+      let tagDaftarIsi = '<li><a class="text-primary" href="#daftar'+ e +'">'+ $(this).text() +'</a></li>';
+      $("#daftar-isi").append(tagDaftarIsi);
+      console.log($(this).text());
+    });
+
 });
 
 // code blocks
