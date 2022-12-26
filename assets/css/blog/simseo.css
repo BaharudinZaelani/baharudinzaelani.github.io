@@ -235,6 +235,7 @@ div#page_body {
 }
 #sidebar li {
     margin-right: 0 !important;
+    padding: 0 !important;
 }
 #sidebar .PopularPosts ul{
     list-style: none;
