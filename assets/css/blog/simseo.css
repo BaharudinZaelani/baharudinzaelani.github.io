@@ -233,6 +233,30 @@ div#page_body {
     text-decoration: none;
     display: block;
 }
+#sidebar li {
+    margin-right: 0 !important;
+}
+#sidebar .PopularPosts ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #b7a9ff6e;
+    border-radius: 9px;
+}
+#sidebar .PopularPosts li .item-thumbnail-only {
+    display: flex;
+    align-items: center;
+}
+#sidebar .PopularPosts li .item-thumbnail-only .item-thumbnail {
+    margin-right: 13px;
+}
+#sidebar .PopularPosts li .item-thumbnail-only .item-thumbnail img {
+    border-radius: 9px !important;
+}
+#sidebar .PopularPosts li .item-thumbnail-only .item-title a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
 
 /* comments */
 .comments {
