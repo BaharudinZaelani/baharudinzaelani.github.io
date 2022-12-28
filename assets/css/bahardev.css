@@ -2,13 +2,23 @@
 * {
     font-family: 'Lexend Deca', sans-serif;
     color: #fff;
+    transition: 0.4s;
+}
+body {
+    overflow-x: hidden;
 }
 
 /* header */
+.scroll-true {
+    padding: 12px 22px !important;
+    width: 100vw !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 .wrp-header {
     width: 90vw;
     margin: auto;
-    padding: 22px 0;
+    padding: 22px;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
 }
 .b-header {
     display: flex;
@@ -32,7 +42,8 @@
 /* introduction */
 .introduction {
     height: 100vh;
-    width: 100vw;
+    width: 60vw;
+    margin: auto;
     display: grid;
     justify-content: center;
     text-align: center;
@@ -41,21 +52,71 @@
     justify-items: center;
 }
 .introduction span {
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.698);
     font-weight: 300;
 }
+.section {
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+}
+.card {
+    border-top-right-radius: 60px !important;
+    border-bottom-left-radius: 60px !important;
+}
+.skills {
+    margin-right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills div img {
+    margin-top: 5px;
+    border-radius: 6px;
+}
+.skills div img:hover {
+    transform: scale(1.2);
+}
+
+/* sosmed */
+.sosmed a {
+    margin-right: 32px;
+}
+.sosmed a svg {
+    transform: scale(2);
+}
+.sosmed a:hover {
+    transform: scale(0.7);
+}
 
 @media screen and ( max-width: 680px ) {
+    .wrp-header {
+        width: 100vw;
+    }
     .b-header {
         display: grid !important;
         text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
     }
     .b-header .list {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         overflow: auto;
         white-space: nowrap;
+        align-items: center;
+        width: 100vw;
+    }
+    .introduction {
+        width: 100vw;
+    }
+    .introduction .display-1 {
+        font-size: 1.6rem;
+    }
+    .introduction span {
+        font-size: 1rem;
     }
 }
