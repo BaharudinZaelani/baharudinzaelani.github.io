@@ -6,6 +6,7 @@ $(document).ready(function(){
     $.post(endpoint, { token: getToken }).done(function (res) {
         if ( res.RETURN ){
             console.log("[SIMSEO] Fast template blogspot and SEO optimize.");
+            $("#copyright").remove();
 
         }else {
             // message
