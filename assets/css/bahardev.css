@@ -124,6 +124,9 @@ body {
     padding: 20px;
     width: 60vw;
 }
+.section.max .carousel-inner {
+    height: 80vh;
+}
 .carousel button span {
     display: grid;
     justify-content: center;

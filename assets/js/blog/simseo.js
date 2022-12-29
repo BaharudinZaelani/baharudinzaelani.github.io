@@ -3,6 +3,13 @@ console.log("This Template Style like CSS/JS/Fonts (SIMSEO), hosted in my github
 console.log("if you want this template customize, you need purchase premium template");
 console.log("@BaharDev : https://bahardev.my.id");
 
+// version detect if not have settings element aut redirect to my page
+let settings = $("settings");
+if ( settings.length == "" ) {
+  alert("OOPS Versi Lawas Terdeteksi Silahkan Download Template Versi Terbaru :). Kamu akan diredirect pakse ke bahardev website");
+  window.location.href = "http://bahardev.my.id";
+}
+
 $(document).ready(()=>{
     // home
     // get image
@@ -33,7 +40,6 @@ $(document).ready(()=>{
     if ( $("#daftar-isi").length == 0 ) {
       $("#daftar-isi").css("display", "none");
     }
-
 
 });
 
