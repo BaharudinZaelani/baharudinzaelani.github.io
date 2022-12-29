@@ -23,15 +23,14 @@ $(document).ready(()=>{
 
     // Daftar isi
     let daftarisi = $(".main h1");
-    let countDaftarIsi = 0;
     daftarisi.each(function(e) {
       $(this).attr("id", "daftar" + e);
       let tagDaftarIsi = '<li><a class="text-primary" href="#daftar'+ e +'">'+ $(this).text() +'</a></li>';
       $("#daftar-isi").append(tagDaftarIsi);
       console.log($(this).text());
-      countDaftarIsi = countDaftarIsi + 1;
     });
-    if ( countDaftarIsi > 0 ) {
+    // check daftar isi
+    if ( $("#daftar-isi").length == 0 ) {
       $("#daftar-isi").css("display", "none");
     }
 
