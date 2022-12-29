@@ -39,7 +39,7 @@
 
 
 /* blog content */
-.section {
+.article {
     margin-top: 32px;
 }
 .body-content .posts{
@@ -200,7 +200,7 @@ span#blog-pager-newer-link::before {
 }
 
 /* sidebar */
-.sidebar .section,
+.sidebar .article,
 div#page_body {
     margin: 0 !important;
 }
