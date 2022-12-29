@@ -94,10 +94,10 @@
 .post-body.entry-content a.download {
     display: inline-block;
     padding: 0 24px;
-    background-color: #b7a9ff !important;
+    background-color: #9784f6 !important;
     font-size: 1.2rem;
     margin: 5px 0;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #fff !important;
 }
 .body-content a {
@@ -124,6 +124,10 @@
     display: block;
     max-height: 490px;
     overflow: hidden;
+    border-radius: 12px;
+}
+.ratio iframe {
+    border-radius: 12px;
 }
 .post-body,
 .post-title,
