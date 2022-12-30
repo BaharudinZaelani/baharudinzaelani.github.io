@@ -26,9 +26,16 @@ $(document).ready(function(){
                 $(".author-profile img").attr("alt", $(".logo h1").text() + " - " + " Author Profile");
             }
 
-            // comment iframe no have title
-            if ( $(".comment-replybox-thread").length > 0 ) {
-                $(".comment-replybox-thread iframe").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
+            // comment SEO Setting
+            if ( $("#comments").length > 0 ) {
+                // remove comment-form if a redirect to _itself
+                if ( $(".comment-form a").length == 0 ) {
+                    $(".comment-form").remove();
+                }
+                // comment iframe no have title
+                if ( $(".comment-replybox-thread").length > 0 ) {
+                    $(".comment-replybox-thread iframe").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
+                }
             }
 
         }else {
