@@ -43,11 +43,11 @@ $(document).ready(function(){
             });
 
             // add shadow to post-footer-line if exist
-            if ( $(".post-footer-line") > 0 ) {
-                $(".post-footer-line").addClass("shadow-sm");
-                $(".post-footer-line").addClass("p-3");
-                $(".post-footer-line").addClass("d-block");
-                $(".post-footer-line").addClass("text-uppercase");
+            if ( $(".post-footer .post-footer-line").length > 0 ) {
+                $(".post-footer-line .post-footer-line").addClass("shadow-sm");
+                $(".post-footer-line .post-footer-line").addClass("p-3");
+                $(".post-footer-line .post-footer-line").addClass("d-block");
+                $(".post-footer-line .post-footer-line").addClass("text-uppercase");
             }
 
         }else {
