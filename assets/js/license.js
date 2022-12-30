@@ -15,7 +15,12 @@ $(document).ready(function(){
         
             // Profile image SEO
             if ( $(".author-profile").length > 0 ) {
-                $(".author-profile").attr("alt", $(".logo h1").text() + " - " + " Author Profile");
+                $(".author-profile img").attr("alt", $(".logo h1").text() + " - " + " Author Profile");
+            }
+
+            // comment iframe no have title
+            if ( $(".comment-replybox-thread").length > 0 ) {
+                $(".comment-replybox-thread").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
             }
 
         }else {
