@@ -37,6 +37,14 @@ $(document).ready(function(){
                     if ( $(".comment-replybox-thread").length > 0 ) {
                         $(".comment-replybox-thread iframe").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
                     }
+
+                    // add shadow to post-footer-line if exist
+                    if ( $(".post-footer-line") > 0 ) {
+                        $(".post-footer-line").addClass("shadow-sm");
+                        $(".post-footer-line").addClass("p-3");
+                        $(".post-footer-line").addClass("d-block");
+                        $(".post-footer-line").addClass("text-uppercase");
+                    }
                 }
             });
 
