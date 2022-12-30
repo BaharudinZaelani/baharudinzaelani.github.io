@@ -8,6 +8,16 @@ $(document).ready(function(){
             console.log("[SIMSEO] Fast template blogspot and SEO optimize.");
             $("#copyright").remove();
 
+            // check daftar isi
+            if ( $("#daftar-isi").length == 0 ) {
+                $("#daftar-isi").css("display", "none");
+            }
+        
+            // Profile image SEO
+            if ( $(".author-profile").length > 0 ) {
+                $(".author-profile").attr("alt", $(".logo h1").text() + " - " + " Author Profile");
+            }
+
         }else {
             // message
             console.log("This Template Style like CSS/JS/Fonts (SIMSEO), hosted in my github pages, you can't modif this template if you get this template for FREE ! ");

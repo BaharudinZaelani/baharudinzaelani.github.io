@@ -31,10 +31,6 @@ $(document).ready(()=>{
       $("#daftar-isi").append(tagDaftarIsi);
       console.log($(this).text());
     });
-    // check daftar isi
-    if ( $("#daftar-isi").length == 0 ) {
-      $("#daftar-isi").css("display", "none");
-    }
 
 });
 

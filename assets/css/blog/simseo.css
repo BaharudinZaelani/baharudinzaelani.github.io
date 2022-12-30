@@ -327,6 +327,14 @@ blockquote {
     border-radius: 10px;
 }
 
+/* Daftar isi */
+.daftar-isi {
+    list-style-type: none;
+}
+.daftar-isi a {
+    font-size: 1rem;
+}
+
 /* lightbox */
 .CSS_LIGHTBOX {
     z-index: 9999 !important;
