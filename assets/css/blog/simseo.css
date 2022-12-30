@@ -328,10 +328,10 @@ blockquote {
 }
 
 /* Daftar isi */
-.daftar-isi {
-    list-style-type: none;
+#daftar-isi {
+    list-style-type: none !important;
 }
-.daftar-isi a {
+#daftar-isi a {
     font-size: 1rem;
 }
 
