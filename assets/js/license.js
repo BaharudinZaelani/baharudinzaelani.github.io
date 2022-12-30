@@ -27,16 +27,18 @@ $(document).ready(function(){
             }
 
             // comment SEO Setting
-            if ( $("#comments").length > 0 ) {
-                // remove comment-form if a redirect to _itself
-                if ( $(".comment-form a").length == 0 ) {
-                    $(".comment-form").remove();
+            $("#comments").ready(()=>{
+                if ( $("#comments").length > 0 ) {
+                    // remove comment-form if a redirect to _itself
+                    if ( $(".comment-form a").length == 0 ) {
+                        $(".comment-form").remove();
+                    }
+                    // comment iframe no have title
+                    if ( $(".comment-replybox-thread").length > 0 ) {
+                        $(".comment-replybox-thread iframe").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
+                    }
                 }
-                // comment iframe no have title
-                if ( $(".comment-replybox-thread").length > 0 ) {
-                    $(".comment-replybox-thread iframe").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
-                }
-            }
+            });
 
         }else {
             // message
