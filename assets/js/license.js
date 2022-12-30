@@ -1,5 +1,7 @@
 // Api For Premium version
 let getToken = $("settings token").text();
+let daftarIsi = $("settings daftarIsi").text();
+let daftarIsiText = $("settings daftarText").text();
 $("settings").remove();
 $(document).ready(function(){
     let endpoint = "https://zawtea.000webhostapp.com/bahardev/";
@@ -9,8 +11,14 @@ $(document).ready(function(){
             $("#copyright").remove();
 
             // check daftar isi
-            if ( $("#daftar-isi").length == 0 ) {
-                $("#daftar-isi").css("display", "none");
+            // Jika daftar isi diset True ! Tampilan !.
+            if ( daftarIsi == "true" ) {
+                if ( $("#daftar-isi").length == 0 ) {
+                    $("#daftar-isi").css("display", "none");
+                }
+                $(".daftar-isi h4").text(daftarIsiText);
+            }else {
+                $(".daftar-isi").css("display", "none");
             }
         
             // Profile image SEO
@@ -20,7 +28,7 @@ $(document).ready(function(){
 
             // comment iframe no have title
             if ( $(".comment-replybox-thread").length > 0 ) {
-                $(".comment-replybox-thread").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
+                $(".comment-replybox-thread iframe").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
             }
 
         }else {
