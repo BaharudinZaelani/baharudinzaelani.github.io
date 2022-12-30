@@ -28,25 +28,27 @@ $(document).ready(function(){
 
             // comment SEO Setting
             $("#comments").ready(()=>{
-                if ( $("#comments").length > 0 ) {
+                if ( $("#comments").length > 1 ) {
                     // remove comment-form if a redirect to _itself
-                    if ( $(".comment-form a").length == 0 ) {
+                    if ( $(".comment-form a").length > 0 ) {
                         $(".comment-form").remove();
                     }
                     // comment iframe no have title
                     if ( $(".comment-replybox-thread").length > 0 ) {
                         $(".comment-replybox-thread iframe").attr("title", $(".logo h1").text() + " - " + " Comment Frame");
                     }
-
-                    // add shadow to post-footer-line if exist
-                    if ( $(".post-footer-line") > 0 ) {
-                        $(".post-footer-line").addClass("shadow-sm");
-                        $(".post-footer-line").addClass("p-3");
-                        $(".post-footer-line").addClass("d-block");
-                        $(".post-footer-line").addClass("text-uppercase");
-                    }
+                }else {
+                    $("#comments").remove();
                 }
             });
+
+            // add shadow to post-footer-line if exist
+            if ( $(".post-footer-line") > 0 ) {
+                $(".post-footer-line").addClass("shadow-sm");
+                $(".post-footer-line").addClass("p-3");
+                $(".post-footer-line").addClass("d-block");
+                $(".post-footer-line").addClass("text-uppercase");
+            }
 
         }else {
             // message
