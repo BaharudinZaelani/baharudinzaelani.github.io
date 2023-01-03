@@ -41,15 +41,6 @@ $(document).ready(function(){
                     $("#comments").remove();
                 }
             });
-
-            // add shadow to post-footer-line if exist
-            if ( $(".post-footer .post-footer-line").length > 0 ) {
-                $(".post-footer-line .post-footer-line").addClass("shadow-sm");
-                $(".post-footer-line .post-footer-line").addClass("p-3");
-                $(".post-footer-line .post-footer-line").addClass("d-block");
-                $(".post-footer-line .post-footer-line").addClass("text-uppercase");
-            }
-
         }else {
             // message
             console.log("This Template Style like CSS/JS/Fonts (SIMSEO), hosted in my github pages, you can't modif this template if you get this template for FREE ! ");

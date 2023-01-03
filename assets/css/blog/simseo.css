@@ -217,6 +217,8 @@ div#page_body {
     margin-top: 12px;
 }
 .widget h2 {
+    font-size: 1.3rem !important;
+    padding-bottom: 17px;
     border-bottom: 4px solid #f3c7b385;
 }
 .widget-content.list-label-widget-content ul {
@@ -232,11 +234,15 @@ div#page_body {
     margin-bottom: 12px;
     font-weight: 500;
 }
-.widget-content.list-label-widget-content ul li a {
+.widget-content.list-label-widget-content ul li a,
+.widget-content.list-label-widget-content ul li span {
     color: #000;
     text-decoration: none;
     display: block;
     padding: 12px;
+}
+.widget-content.list-label-widget-content ul li span {
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
 }
 #sidebar li {
     margin-right: 0 !important;
@@ -262,6 +268,33 @@ div#page_body {
 #sidebar .PopularPosts li .item-thumbnail-only .item-title a {
     text-decoration: none !important;
     color: #000 !important;
+}
+.widget-content .popular-posts {
+    background-color: #ffffff !important;
+    padding-bottom: 15px;
+}
+.PopularPosts .item-thumbnail {
+    float: none !important;
+    height: 80px;
+    margin: 0 !important;
+}
+.PopularPosts .item-title {
+    height: 85px;
+}
+.PopularPosts img {
+    padding: 0 !important;
+    border-radius: 12px;
+}
+.PopularPosts .item-title a {
+    display: block;
+    left: 12px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* comments */
