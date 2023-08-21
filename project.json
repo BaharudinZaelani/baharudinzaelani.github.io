@@ -1,6 +1,20 @@
-{
-    "image": "",
-    "title": "",
-    "description": "",
-    "link": ""
-}
+[
+    {
+        "image": "/assets/img/project/CicakDevTeam.png",
+        "title": "Cicak Developer Team",
+        "description": "Project Website, App anak bangsa..",
+        "link": "https://cicak.bahardev.my.id"
+    },
+    {
+        "image": "/assets/img/project/androzaw.png",
+        "title": "AndroZAW",
+        "description": "AndroZAW adalah website yang menyediakan berbagai aplikasi android dan software PC, kami menyediakan file original,mod apk,software PC, Games dan masih banyak lagi.",
+        "link": "https://androzaw.blogspot.com/"
+    },
+    {
+        "image": "/assets/img/project/ngacode.png",
+        "title": "Ngacode",
+        "description": "Blog yang membahas seputar programing..",
+        "link": "https://ngacode.bahardev.my.id"
+    }
+]

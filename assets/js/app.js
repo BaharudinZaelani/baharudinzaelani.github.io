@@ -10,6 +10,7 @@ $(window).scroll(function() {
 });
 
 const templatePortofolia = `
+<div class="carousel-item">
     <div class="portofolio">
         <div class="img">
             <img src="!image" class="img-fluid" height="180">
@@ -26,8 +27,28 @@ const templatePortofolia = `
             </div>
         </div>
     </div>
+</div>
 `
 
-$(document).ready(()=>{
+$(document).ready(()=>{ 
+    axios.get("/project.json", {
+        header: {
+            Accept: "application/json"
+        }
+    }).then(res => {
+        res.data.forEach(element => {
+            let tagHtml = templatePortofolia
+            tagHtml = tagHtml.replace("!image", element.image)
+            tagHtml = tagHtml.replace("!description", element.description)
+            tagHtml = tagHtml.replace("!title", element.title)
+            tagHtml = tagHtml.replace("!link", element.link)
+            $("#project").append($.parseHTML(tagHtml))
+        })
+        if ( $(".section.max").hasClass("hide") && res.data.length > 0 ) {
+            $(".section.max").removeClass('hide')
+        }
 
-});
+        // add active to first child
+        $("#project .carousel-item:first-child").addClass("active")
+    })
+})
