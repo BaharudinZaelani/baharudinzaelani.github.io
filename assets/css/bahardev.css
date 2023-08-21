@@ -145,7 +145,7 @@ body {
         overflow: auto;
     }
     .portofolio .img {
-        display: none;
+        height: 180px;
     }
     .wrp-header {
         width: 100vw;
