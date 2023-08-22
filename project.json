@@ -16,5 +16,11 @@
         "title": "Ngacode",
         "description": "Blog yang membahas seputar programing..",
         "link": "https://ngacode.bahardev.my.id"
+    },
+    {
+        "image": "/assets/img/project/singascript.png",
+        "title": "SingaScript",
+        "description": "Website yang menyediakan berbagai source code..",
+        "link": "https://singascript.naureendigition.com"
     }
 ]

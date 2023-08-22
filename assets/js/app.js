@@ -51,4 +51,9 @@ $(document).ready(()=>{
         // add active to first child
         $("#project .carousel-item:first-child").addClass("active")
     })
+
+    // hide menu
+    $("#toggle-menu").click(() => {
+        $(".menu").toggleClass("hide")
+    })
 })

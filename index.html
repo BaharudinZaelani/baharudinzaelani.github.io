@@ -26,31 +26,55 @@
 
 <body class="bg-dark">
 
-
     <!-- header -->
-    <div class="wrp-header fixed-top">
-        <!-- nav header -->
-        <div class="b-header">
-            <div class="logo">
-                <h1>BaharDEV</h1>
-            </div>
-            <div class="list">
-                <a href="/">Home</a>
-                <a href="https://ngacode.bahardev.my.id" target="_blank">Project</a>
-                <!-- <a href="#">Project</a> -->
+    <header class="bg-dark fixed-top">
+        <div class="wrp-header">
+            <!-- nav header -->
+            <div class="b-header">
+                <div class="logo">
+                    <div class="d-flex align-items-center" style="gap: 12px;">
+                        <div>
+                            <img src="/assets/img/bahardev.png" class="img-fluid rounded" width="80"
+                                alt="BaharDEV Logo">
+                        </div>
+                        <div class="text-start">
+                            <h1 class="m-0">BaharDEV</h1>
+                            <span class="badge bg-light text-dark">Baharudin Zaelani</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list menu">
+                    <a href="#top">
+                        <i class="bi bi-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#portofolio">
+                        <i class="bi bi-file-earmark-binary"></i>
+                        <span>Portofolio</span>
+                    </a>
+                    <a href="#aboutMe">
+                        <i class="bi bi-info-square"></i>
+                        <span>About Me</span>
+                    </a>
+                </div>
+                <div class="list mobile" style="top: 10vh;">
+                    <h1 id="toggle-menu" class="m-0">
+                        <i class="bi bi-list"></i>
+                    </h1>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- introduction -->
-    <div class="introduction">
+    <div class="introduction" id="top">
         <h1 class="display-1">SELAMAT DATANG</h1>
         <span>Webiste dibuat dengan segenap hati dan sambil ngopi</span>
     </div>
 
 
 
-    <div class="section">
+    <div class="section" id="aboutMe">
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
@@ -177,7 +201,7 @@
         </div>
     </div>
 
-    <div class="section max hide">
+    <div class="section max hide" id="portofolio">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" id="project">
                 <!-- portofolio -->

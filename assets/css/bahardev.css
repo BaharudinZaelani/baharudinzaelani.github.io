@@ -4,6 +4,16 @@
     color: #fff;
     transition: 0.4s;
 }
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
 body {
     overflow-x: hidden;
 }
@@ -11,14 +21,15 @@ body {
 /* header */
 .scroll-true {
     padding: 12px 22px !important;
-    width: 100vw !important;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* width: 100vw !important; */
 }
 .wrp-header {
     width: 90vw;
     margin: auto;
     padding: 22px;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+header {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .b-header {
     display: flex;
@@ -27,6 +38,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 22px;
 }
 .b-header .list a {
     margin: 0 5px;
@@ -37,6 +49,10 @@ body {
 .b-header .list a:hover {
     color: #000;
     background-color: #fff;
+}
+.b-header .list a:hover i,
+.b-header .list a:hover span {
+    color: #000 !important;
 }
 
 /* introduction */
@@ -82,7 +98,6 @@ body {
 /* sosmed */
 .sosmed a {
     margin-right: 32px;
-    
 }
 .sosmed a svg {
     transform: scale(2);
@@ -134,7 +149,16 @@ body {
     background-color: rgba(0, 0, 0, 0.519);
 }
 
-@media screen and ( max-width: 680px ) {
+.mobile {
+    display: none;
+}
+@media screen and ( max-width: 680px ) {    
+    body::-webkit-scrollbar {
+        width: 0 !important;
+    }
+    .fixed-top {
+        position: relative !important;
+    }
     .portofolio {
         display: block;
     }
@@ -158,14 +182,6 @@ body {
         justify-items: center;
         justify-content: center;
     }
-    .b-header .list {
-        display: flex;
-        justify-content: space-around;
-        overflow: auto;
-        white-space: nowrap;
-        align-items: center;
-        width: 100vw;
-    }
     .introduction {
         width: 100vw;
     }
@@ -174,5 +190,39 @@ body {
     }
     .introduction span {
         font-size: 1rem;
+    }
+    .mobile {
+        display: block;
+    }
+    
+
+    /* header */
+    header .list {
+        position: fixed !important;
+        top: 20vh;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        right: 12px;
+        width: 80px;
+        background-color: var(--bs-dark);
+        padding: 12px;
+        border-radius: 12px;
+
+        display: flex !important;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .b-header .list a {
+        margin: 0;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 0;
+        font-size: 1.3rem;
+        border-radius: 7px;
+    }
+    .b-header .list span {
+        display: none;
+    }
+    .menu.hide {
+        right: -50vw !important;
     }
 }
