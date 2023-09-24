@@ -99,8 +99,8 @@ header {
 .sosmed a {
     margin-right: 32px;
 }
-.sosmed a svg {
-    transform: scale(2);
+.sosmed a {
+    transform: scale(1.2);
 }
 .sosmed a:hover {
     transform: scale(0.7);
@@ -203,7 +203,8 @@ header {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         right: 12px;
         width: 80px;
-        background-color: var(--bs-dark);
+        transform: scale(0.8);
+        background-color: #3a434c;
         padding: 12px;
         border-radius: 12px;
 
