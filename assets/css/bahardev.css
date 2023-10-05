@@ -152,7 +152,10 @@ header {
 .mobile {
     display: none;
 }
-@media screen and ( max-width: 680px ) {    
+@media screen and ( max-width: 780px ) {    
+    .section {
+        height: 90vh !important;
+    }
     body::-webkit-scrollbar {
         width: 0 !important;
     }
@@ -184,6 +187,7 @@ header {
     }
     .introduction {
         width: 100vw;
+        height: 30vh;
     }
     .introduction .display-1 {
         font-size: 1.6rem;
