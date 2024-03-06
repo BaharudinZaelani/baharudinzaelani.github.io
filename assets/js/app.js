@@ -1,10 +1,10 @@
 // scroll header
-$(window).scroll(function() {
+$(window).scroll(function () {
     let scroll = $(window).scrollTop();
     // console.log();
-    if ( scroll > 49 ) {
+    if (scroll > 49) {
         $(".wrp-header").addClass("scroll-true");
-    }else {
+    } else {
         $(".wrp-header").removeClass("scroll-true");
     }
 });
@@ -16,22 +16,44 @@ const templatePortofolia = `
             <img src="!image" class="img-fluid" height="180">
         </div>
         <div class="description">
-            <h2>!title</h2>
-            <p>!description</p>
-            <div>
+            <div class="mb-3">
                 <a target="_blank" class="d-inline-block btn btn-light btn-sm"
                     href="!link">
                     <i class="bi bi-link-45deg"></i>
                     <span>Link Webiste</span>
                 </a>
             </div>
+            <h2>!title</h2>
+            <p>!description</p>
         </div>
     </div>
 </div>
 `
 
-$(document).ready(()=>{ 
-    axios.get("/project.json", {
+const templatePersonalProject = `
+    <div class="row mb-5 p-2 align-items-cemter">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="image-personal rounded img">
+                        <img src="!image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <h2>!title</h2>
+            <p>!description</p>
+            <a target="_blank" class="d-inline-block btn btn-light btn-sm" href="!link">
+                <i class="bi text-dark bi-link-45deg"></i>
+                <span class="text-dark">Link Webiste</span>
+            </a>
+        </div>
+    </div>
+`
+
+$(document).ready(() => {
+    axios.get("/company-project.json", {
         header: {
             Accept: "application/json"
         }
@@ -44,12 +66,28 @@ $(document).ready(()=>{
             tagHtml = tagHtml.replace("!link", element.link)
             $("#project").append($.parseHTML(tagHtml))
         })
-        if ( $(".section.max").hasClass("hide") && res.data.length > 0 ) {
+        if ($(".section.max").hasClass("hide") && res.data.length > 0) {
             $(".section.max").removeClass('hide')
         }
 
         // add active to first child
         $("#project .carousel-item:first-child").addClass("active")
+    })
+
+    axios.get("/personal-project.json", {
+        header: {
+            Accept: "application/json"
+        }
+    }).then(res => {
+        res.data.forEach(ell => {
+            let tmplateHtml = templatePersonalProject
+            tmplateHtml = tmplateHtml.replace("!image", ell.image)
+            tmplateHtml = tmplateHtml.replace("!description", ell.description)
+            tmplateHtml = tmplateHtml.replace("!title", ell.title)
+            tmplateHtml = tmplateHtml.replace("!link", ell.link)
+            $("#personal-project").append($.parseHTML(tmplateHtml))
+        })
+        console.log(res.data)
     })
 
     // hide menu

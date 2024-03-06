@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Naureen Digital Education - Publisher",
+        "image": "/assets/img/company-project/Naureen-Publisher-Toko-Buku-Online.png",
+        "description": "Website untuk publikasi buku/Toko Buku full System dengan Pembayaran.",
+        "link": "https://publish.naureendigition.com"
+    },
+    {
+        "title": "Naureen Digital Education - SDM",
+        "image": "/assets/img/company-project/SDM-Naureen-Digital-Education.png",
+        "description": "Dimana website untuk karyawan PT Naureen Digital Education untuk menerima pekerjaan mereka.",
+        "link": "https://sdm.naureendigition.com/"
+    },
+    {
+        "title": "Institut Manajemen Wiyata Indonesia - Website Pelayanan Mahasiswa",
+        "image": "/assets/img/company-project/E-SERVICE.png",
+        "description": "Website ini digunakan untuk pelayanan mahasiswa seperti permohonan rekap nilai, permohonan magang/KKN dan lainnya.",
+        "link": "https://pelayanan.imwi.ac.id/"
+    },
+    {
+        "title": "Naureen Digital Education - Article Payment",
+        "image": "/assets/img/company-project/E-Journal.png",
+        "description": "Website ini digunakan untuk pembayaran jurnal artikel dengan menggunakan Xendit Payment Gateway..",
+        "link": "https://e-payment.naureendigition.com/"
+    },
+    {
+        "title": "Institut Manajemen Wiyata Indonesia - Website Akuntansi",
+        "image": "/assets/img/company-project/Imwi-Akuntansi.png",
+        "description": "Website sistem akuntansi untuk mengelola semua keuangan Institut Manajemen Wiyata Indonesia.",
+        "link": "/private.html"
+    }
+]
