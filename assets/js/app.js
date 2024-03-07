@@ -87,7 +87,6 @@ $(document).ready(() => {
             tmplateHtml = tmplateHtml.replace("!link", ell.link)
             $("#personal-project").append($.parseHTML(tmplateHtml))
         })
-        console.log(res.data)
     })
 
     // hide menu
