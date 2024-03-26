@@ -31,7 +31,10 @@ const templatePortofolia = `
 `
 
 const templatePersonalProject = `
-    <div class="row mb-5 p-2 align-items-cemter">
+    <div class="row mb-5 p-2 align-items-center" 
+        data-aos="<aos>"
+        data-aos-offset="200"
+        data-aos-duration="500">
         <div class="col-md-5">
             <div class="card">
                 <div class="card-body">
@@ -53,12 +56,13 @@ const templatePersonalProject = `
 `
 
 $(document).ready(() => {
+    // Company Project
     axios.get("/company-project.json", {
         header: {
             Accept: "application/json"
         }
     }).then(res => {
-        res.data.forEach(element => {
+        res.data.forEach((element) => {
             let tagHtml = templatePortofolia
             tagHtml = tagHtml.replace("!image", element.image)
             tagHtml = tagHtml.replace("!description", element.description)
@@ -74,17 +78,24 @@ $(document).ready(() => {
         $("#project .carousel-item:first-child").addClass("active")
     })
 
+    // Personal Project
     axios.get("/personal-project.json", {
         header: {
             Accept: "application/json"
         }
     }).then(res => {
-        res.data.forEach(ell => {
+        res.data.forEach((ell, key) => {
             let tmplateHtml = templatePersonalProject
             tmplateHtml = tmplateHtml.replace("!image", ell.image)
             tmplateHtml = tmplateHtml.replace("!description", ell.description)
             tmplateHtml = tmplateHtml.replace("!title", ell.title)
             tmplateHtml = tmplateHtml.replace("!link", ell.link)
+            if ((key % 2) == 0) {
+                tmplateHtml = tmplateHtml.replace("<aos>", "fade-left");
+            } else {
+                tmplateHtml = tmplateHtml.replace("<aos>", "fade-right");
+            }
+
             $("#personal-project").append($.parseHTML(tmplateHtml))
         })
     })
@@ -92,5 +103,16 @@ $(document).ready(() => {
     // hide menu
     $("#toggle-menu").click(() => {
         $(".menu").toggleClass("hide")
+    })
+
+    // Animation typed
+    const typed = new Typed('#element', {
+        strings: [
+            'Web Developer',
+            'Front End',
+            'Back End',
+            '.... Scroll down for more info'
+        ],
+        typeSpeed: 50,
     })
 })
