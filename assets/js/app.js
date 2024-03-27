@@ -4,8 +4,10 @@ $(window).scroll(function () {
     // console.log();
     if (scroll > 49) {
         $(".wrp-header").addClass("scroll-true");
+        $(".nav-zaw-list").css("top", "0vh");
     } else {
         $(".wrp-header").removeClass("scroll-true");
+        $(".nav-zaw-list").css("top", "20vh");
     }
 });
 
@@ -105,7 +107,7 @@ $(document).ready(() => {
         $(".menu").toggleClass("hide")
     })
 
-    // Animation typed
+    // Setup Library
     const typed = new Typed('#element', {
         strings: [
             'Web Developer',
