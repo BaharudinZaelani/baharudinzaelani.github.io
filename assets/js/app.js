@@ -15,8 +15,9 @@ const initSwiper = () => {
 // Inisialisasi Typed.js
 const initTyped = () => {
     new Typed('#element', {
-        strings: ['Web Developer', 'Front End', 'Back End', '.... Scroll down for more info'],
-        typeSpeed: 50,
+        strings: ['Web Developer', 'Front End', 'Back End', "Software Enginer"],
+        typeSpeed: 80,
+        loop: true
     });
 };
 
@@ -66,7 +67,7 @@ const templatePersonalProject = `
         <div class="flex flex-wrap gap-2 mb-4">!tech_badges</div>
         <div class="flex space-x-3">
             <a href="!link" target="_blank" class="flex-1 text-center px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors">
-                <i class="fas fa-external-link-alt mr-2"></i> Demo
+                <i class="fas fa-external-link-alt mr-2"></i> Kunjungi
             </a>
             <a href="!github" target="_blank" class="flex-1 text-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900 transition-colors">
                 <i class="fab fa-github mr-2"></i> Code
